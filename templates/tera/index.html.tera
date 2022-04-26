@@ -1,0 +1,16 @@
+{# {% import "macros" as m %} #}
+
+{% extends 'tera/base' %}
+
+{% block content %}
+    Home page for terra template rendering
+    <h1>Form Examples</h1>
+
+    <form action="/" method="post", enctype="multipart/form-data">
+        <div class="textfield">
+            <label> Label </label>
+            <input type="text" label="input" name="account.name"/>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+{% endblock content %}
